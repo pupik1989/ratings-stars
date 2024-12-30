@@ -37,16 +37,29 @@ justify-content: space-around;
 `;
 
 const StyledStarBox = styled.div`
-background-color:#ececec;
-width: 50%;
-height: 200px;
-margin: 30px;
+  background-color: #ececec;
+  width: 100%;  
+  max-width: 500px;  
+  height: auto;  
+  margin: 30px;
+  padding: 20px;  
+  box-sizing: border-box; 
+
+  @media (max-width: 768px) {
+    width: 90%;  
+    height: 150px;  
+  }
+
+  @media (max-width: 480px) {
+    width: 95%;  
+    height: 120px;  
+  }
 `;
 
 const StyledStar = styled.img`
 width: 50px;
-margin: 8px;
-height: 49px;
+margin: 10px;
+height: 50px;
 `
 
 
